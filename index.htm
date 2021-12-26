@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>google</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+</head>
+
+<!--coding for google home page-->
+
+<body>
+<header>
+<nav>
+<ul id= "nav_bar">
+<li class="nav-links" id="gmail"> <a href="http://gmail.com/"> Gmail </a> </li>
+<li class="nav-links"> <a href="https://www.google.co.in/imghp?hl=en&authuser=0&ogbl"> Images </a> </li>
+<li id="sign_in"> <a href="http://gmail.com/"> Sign In </a> </li>
+
+</ul>
+</nav>
+</header> 
+
+<!--coding continued -->
+
+
+<!--adding google image -->
+
+<div class="google">
+<a href="" id="google_logo"> <img src="D:\Google project\google1.jpg" alt="Google"/>
+</div>
+
+<!--ending of google image -->
+
+<!--search & miscellaneous-->
+
+<div class="form">
+<form id="frmSearch" method="get" />
+<input type="text" id="txtSearch" placeholder="Search">
+
+
+<div class="button">
+<input type="submit" value="Google Search" id="google_search">
+<input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
+</div>
+
+<!--ending of search & miscellaneous-->
+
+<!--addition of javascript-->
+
+<script type="text/javascript">
+	document.getElementById('frmSearch').onsubmit = function() {
+	window.location = 'https://www.google.com/search?q='	+ document.getElementById('txtSearch').value;
+	return false;
+}
+</script>
+
+<!--ending of javascript-->
+
+<!--setting footer and details-->
+
+<footer>
+<ul class="footer-left">
+<li> <a href="https://about.google/"> About </a>
+<li> <a href="https://ads.google.com/"> Advertising </a>
+<li> <a href="https://www.google.com/intl/en_in/business/"> Business </a>
+<li> <a href="https://www.google.com/search/howsearchworks/?fg=1"> How Search Works </a>
+</ul>
+
+<ul class="footer-right">
+<li> <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy </a> </li>
+<li> <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms </a> </li>
+<li> <a href="">Settings </a> </li>
+
+</ul>
+
+</footer>
+
+<!--end of body and coding-->
+
+</body>
+</html>
